@@ -28,12 +28,12 @@ while True:
     print("Please enter your password")
     try_password=input()
 
-    
-    if try_password!=password:
-      print("incorrect password")
-
-
-    
+    while True:
+      if try_password!=password:
+        print("incorrect password")
+      else:
+        break
+        
     if try_password==password:
       print("Please enter the word you want to decode")
       word=input()
@@ -57,5 +57,3 @@ while True:
   if answer=="n":
     print("Thank you for using the Encoder!")
     break
-
-#additional: loop that allows you to retry password 3 times
